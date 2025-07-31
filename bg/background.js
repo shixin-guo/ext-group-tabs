@@ -4,31 +4,48 @@
 const utils = {
     noop: function() {},
     parseURL: function(url) {
-        const a = document.createElement('a');
-        a.href = url;
-        return {
-            source: url,
-            href: a.href.replace(/(^https?\:\/\/)(www\.)/, '$1'),
-            protocol: a.protocol.replace(':', ''),
-            host: a.hostname.replace(/^www\./, ''),
-            port: a.port,
-            query: a.search,
-            params: (() => {
-                const ret = {};
-                const seg = a.search.replace(/^\?/, '').split('&');
-                for (let i = 0; i < seg.length; i++) {
-                    if (!seg[i]) { continue; }
-                    const s = seg[i].split('=');
-                    ret[s[0]] = s[1];
-                }
-                return ret;
-            })(),
-            file: (a.pathname.match(/\/([^\/?#]+)$/i) || [, ''])[1],
-            hash: a.hash.replace('#', ''),
-            path: a.pathname.replace(/^([^\/])/, '/$1'),
-            relative: (a.href.match(/tps?:\/\/[^\/]+(.+)/) || [, ''])[1],
-            segments: a.pathname.replace(/^\//, '').split('/')
-        };
+        try {
+            const urlObj = new URL(url);
+            return {
+                source: url,
+                href: urlObj.href.replace(/(^https?\:\/\/)(www\.)/, '$1'),
+                protocol: urlObj.protocol.replace(':', ''),
+                host: urlObj.hostname.replace(/^www\./, ''),
+                port: urlObj.port,
+                query: urlObj.search,
+                params: (() => {
+                    const ret = {};
+                    const seg = urlObj.search.replace(/^\?/, '').split('&');
+                    for (let i = 0; i < seg.length; i++) {
+                        if (!seg[i]) { continue; }
+                        const s = seg[i].split('=');
+                        ret[s[0]] = s[1];
+                    }
+                    return ret;
+                })(),
+                file: (urlObj.pathname.match(/\/([^\/?#]+)$/i) || [, ''])[1],
+                hash: urlObj.hash.replace('#', ''),
+                path: urlObj.pathname.replace(/^([^\/])/, '/$1'),
+                relative: (urlObj.href.match(/tps?:\/\/[^\/]+(.+)/) || [, ''])[1],
+                segments: urlObj.pathname.replace(/^\//, '').split('/')
+            };
+        } catch (e) {
+            // 如果URL格式不正确，返回一个默认对象
+            return {
+                source: url,
+                href: url,
+                protocol: '',
+                host: '',
+                port: '',
+                query: '',
+                params: {},
+                file: '',
+                hash: '',
+                path: '',
+                relative: '',
+                segments: []
+            };
+        }
     },
     removeDublicates: function(arr, equalFn) {
         equalFn = equalFn || function(a, b) {
@@ -668,9 +685,11 @@ function updateIcon() {
         chrome.tabs.query({windowId: chrome.windows.WINDOW_ID_CURRENT}, function(tabs) {
             const img19 = tabs.length >= RED_TABS_COUNT ? 'img/kpager-19-red.png' : 'img/kpager-19.png';
             const img38 = tabs.length >= RED_TABS_COUNT ? 'img/kpager-38-red.png' : 'img/kpager-38.png';
+            
+            // 在Manifest V3中，使用chrome.runtime.getURL获取正确的资源路径
             chrome.action.setIcon({path: {
-                '19': img19,
-                '38': img38
+                '19': chrome.runtime.getURL(img19),
+                '38': chrome.runtime.getURL(img38)
             }});
         });
     }, 300);

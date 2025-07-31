@@ -9,32 +9,49 @@
     noop: function() {},
     parseURL: function(url) {
       //log('parseUrl', url);
-      var a = document.createElement('a');
-      a.href = url;
-      return {
-          source: url,
-          href: a.href.replace(/(^https?\:\/\/)(www\.)/, '$1'),
-          protocol: a.protocol.replace(':', ''),
-          host: a.hostname.replace(/^www\./, ''),
-          port: a.port,
-          query: a.search,
-          params: (function(){
-              var ret = {},
-                  seg = a.search.replace(/^\?/,'').split('&'),
-                  len = seg.length, i = 0, s;
-              for (;i<len;i++) {
-                  if (!seg[i]) { continue; }
-                  s = seg[i].split('=');
-                  ret[s[0]] = s[1];
-              }
-              return ret;
-          })(),
-          file: (a.pathname.match(/\/([^\/?#]+)$/i) || [,''])[1],
-          hash: a.hash.replace('#',''),
-          path: a.pathname.replace(/^([^\/])/,'/$1'),
-          relative: (a.href.match(/tps?:\/\/[^\/]+(.+)/) || [,''])[1],
-          segments: a.pathname.replace(/^\//,'').split('/')
-      };
+      try {
+        var urlObj = new URL(url);
+        return {
+            source: url,
+            href: urlObj.href.replace(/(^https?\:\/\/)(www\.)/, '$1'),
+            protocol: urlObj.protocol.replace(':', ''),
+            host: urlObj.hostname.replace(/^www\./, ''),
+            port: urlObj.port,
+            query: urlObj.search,
+            params: (function(){
+                var ret = {},
+                    seg = urlObj.search.replace(/^\?/,'').split('&'),
+                    len = seg.length, i = 0, s;
+                for (;i<len;i++) {
+                    if (!seg[i]) { continue; }
+                    s = seg[i].split('=');
+                    ret[s[0]] = s[1];
+                }
+                return ret;
+            })(),
+            file: (urlObj.pathname.match(/\/([^\/?#]+)$/i) || [,''])[1],
+            hash: urlObj.hash.replace('#',''),
+            path: urlObj.pathname.replace(/^([^\/])/,'/$1'),
+            relative: (urlObj.href.match(/tps?:\/\/[^\/]+(.+)/) || [,''])[1],
+            segments: urlObj.pathname.replace(/^\//,'').split('/')
+        };
+      } catch (e) {
+        // 如果URL格式不正确，返回一个默认对象
+        return {
+            source: url,
+            href: url,
+            protocol: '',
+            host: '',
+            port: '',
+            query: '',
+            params: {},
+            file: '',
+            hash: '',
+            path: '',
+            relative: '',
+            segments: []
+        };
+      }
     },
     removeDublicates: function(arr, equalFn) {
       equalFn = equalFn || function(a, b) {
