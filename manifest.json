@@ -22,5 +22,5 @@
    "options_page": "options/options.html",
    "permissions": [ "tabs", "storage", "contextMenus" ],
    "short_name": "__MSG_shortName__",
-   "version": "1.7"
+   "version": "2.0"
 }
