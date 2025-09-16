@@ -210,6 +210,7 @@
     return favIconUrl;
   }
 
+
   function setLinks(tabs, commonFavIconUrl) {
     var nodata = document.getElementById('nodata');
     var ul = document.getElementById('links');
@@ -254,6 +255,7 @@
 
       ul.appendChild(wrap);
     });
+
   }
 
   function setNodata() {

@@ -76,7 +76,7 @@
   exports.utils = module;
 
   // nasty log functions
-  var prodIDs = ['chaoejepfhlcelgpicelfccoiojpiofn', 'hpnnhabkliinlljmhjalfmccfcdokena'];
+  var prodIDs = ['pdfljehjkbbacjbgnocamgcllobmfocc', 'hpnnhabkliinlljmhjalfmccfcdokena'];
   exports.DEBUG = prodIDs.indexOf(chrome.runtime.id) === -1;
   exports.log = function() {
     if (DEBUG) {

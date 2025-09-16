@@ -1,0 +1,80 @@
+{
+   "close": {
+      "message": "Cerrar"
+   },
+   "contextMenu_makeGroups": {
+      "message": "¡Agrupar!"
+   },
+   "description": {
+      "message": "Cuando abras demasiadas pestañas, simplemente haz clic en el botón de la extensión - y todas tus pestañas se agruparán en listas bonitas"
+   },
+   "name": {
+      "message": "Agrupar Pestañas"
+   },
+   "nodata": {
+      "message": "Sin datos"
+   },
+   "options_excludeHosts": {
+      "message": "excluir dominios"
+   },
+   "options_feedback": {
+      "message": "Comentarios"
+   },
+   "options_groupHost": {
+      "message": "agrupar por dominio"
+   },
+   "options_groupHostDesc": {
+      "message": "agrupará todas las pestañas abiertas en un dominio particular"
+   },
+   "options_groupRare": {
+      "message": "agrupar pestañas poco usadas"
+   },
+   "options_groupRareDesc": {
+      "message": "agrupará las pestañas que no has usado en 3 horas"
+   },
+   "options_groupSerp": {
+      "message": "agrupar resultados de búsqueda (Google, Yandex)"
+   },
+   "options_groupSerpDesc": {
+      "message": "agrupará todas las pestañas abiertas desde la página de resultados del motor de búsqueda"
+   },
+   "options_restoreGroups": {
+      "message": "Restaurar todos los grupos guardados"
+   },
+   "options_save": {
+      "message": "Guardar"
+   },
+   "options_saved": {
+      "message": "Guardado"
+   },
+   "options_showContextMenuItem": {
+      "message": "mostrar elemento en el menú contextual"
+   },
+   "options_showContextMenuItemDesc": {
+      "message": "puedes agrupar pestañas rápidamente a través del menú contextual"
+   },
+   "options_removeDuplicateTabs": {
+      "message": "eliminar pestañas duplicadas"
+   },
+   "options_removeDuplicateTabsDesc": {
+      "message": "eliminará las pestañas con la misma URL después de agrupar"
+   },
+   "options_title": {
+      "message": "Configuración"
+   },
+   "options_version": {
+      "message": "Versión"
+   },
+   "rarelyUsed": {
+      "message": "Poco usado"
+   },
+   "restore": {
+      "message": "Abrir todos los enlaces en la ventana <b>actual</b>"
+   },
+   "restoreNewWin": {
+      "message": "Abrir todos los enlaces en una ventana <b>nueva</b>"
+   },
+   "shortName": {
+      "message": "Agrupar Pestañas"
+   }
+}

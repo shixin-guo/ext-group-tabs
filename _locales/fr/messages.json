@@ -1,0 +1,80 @@
+{
+   "close": {
+      "message": "Fermer"
+   },
+   "contextMenu_makeGroups": {
+      "message": "Grouper !"
+   },
+   "description": {
+      "message": "Quand vous ouvrez trop d'onglets, cliquez simplement sur le bouton de l'extension - et tous vos onglets seront groupés en jolies listes"
+   },
+   "name": {
+      "message": "Grouper Vos Onglets"
+   },
+   "nodata": {
+      "message": "Aucune donnée"
+   },
+   "options_excludeHosts": {
+      "message": "exclure les domaines"
+   },
+   "options_feedback": {
+      "message": "Commentaires"
+   },
+   "options_groupHost": {
+      "message": "grouper par domaine"
+   },
+   "options_groupHostDesc": {
+      "message": "groupera tous les onglets ouverts sur un domaine particulier"
+   },
+   "options_groupRare": {
+      "message": "grouper les onglets rarement utilisés"
+   },
+   "options_groupRareDesc": {
+      "message": "groupera les onglets que vous n'avez pas utilisés dans les 3 heures"
+   },
+   "options_groupSerp": {
+      "message": "grouper les résultats de recherche (Google, Yandex)"
+   },
+   "options_groupSerpDesc": {
+      "message": "groupera tous les onglets ouverts depuis la page de résultats du moteur de recherche"
+   },
+   "options_restoreGroups": {
+      "message": "Restaurer tous les groupes sauvegardés"
+   },
+   "options_save": {
+      "message": "Sauvegarder"
+   },
+   "options_saved": {
+      "message": "Sauvegardé"
+   },
+   "options_showContextMenuItem": {
+      "message": "afficher l'élément dans le menu contextuel"
+   },
+   "options_showContextMenuItemDesc": {
+      "message": "vous pouvez grouper rapidement les onglets via le menu contextuel"
+   },
+   "options_removeDuplicateTabs": {
+      "message": "supprimer les onglets dupliqués"
+   },
+   "options_removeDuplicateTabsDesc": {
+      "message": "supprimera les onglets avec la même URL après groupement"
+   },
+   "options_title": {
+      "message": "Paramètres"
+   },
+   "options_version": {
+      "message": "Version"
+   },
+   "rarelyUsed": {
+      "message": "Rarement utilisé"
+   },
+   "restore": {
+      "message": "Ouvrir tous les liens dans la fenêtre <b>actuelle</b>"
+   },
+   "restoreNewWin": {
+      "message": "Ouvrir tous les liens dans une <b>nouvelle</b> fenêtre"
+   },
+   "shortName": {
+      "message": "Grouper Onglets"
+   }
+}

@@ -48,10 +48,16 @@
       "message": "Saved"
    },
    "options_showContextMenuItem": {
-      "message": "show item in contextmenu"
+      "message": "show item in context menu"
    },
    "options_showContextMenuItemDesc": {
-      "message": "youi can quickly group tabs via contextmenu"
+      "message": "you can quickly group tabs via context menu"
+   },
+   "options_removeDuplicateTabs": {
+      "message": "remove duplicate tabs"
+   },
+   "options_removeDuplicateTabsDesc": {
+      "message": "will remove tabs with the same URL after grouping"
    },
    "options_title": {
       "message": "Settings"

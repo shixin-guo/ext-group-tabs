@@ -16,6 +16,7 @@
         groupSerp: document.querySelector('#groupSerp').checked,
         groupRare: document.querySelector('#groupRare').checked,
         showContextMenuItem: document.querySelector('#showContextMenuItem').checked,
+        removeDuplicateTabs: document.querySelector('#removeDuplicateTabs').checked,
         excludeHosts: document.querySelector('#excludeHosts').value.trim().split('\n')
       };
       storage.save(options);
@@ -55,6 +56,7 @@
       document.querySelector('#groupSerp').checked = options.groupSerp;
       document.querySelector('#groupRare').checked = options.groupRare;
       document.querySelector('#showContextMenuItem').checked = options.showContextMenuItem;
+      document.querySelector('#removeDuplicateTabs').checked = options.removeDuplicateTabs;
       document.querySelector('#excludeHosts').textContent = hosts2Str(options.excludeHosts);
 
       // events

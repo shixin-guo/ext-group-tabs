@@ -1,0 +1,80 @@
+{
+   "close": {
+      "message": "बंद करें"
+   },
+   "contextMenu_makeGroups": {
+      "message": "समूह बनाएं!"
+   },
+   "description": {
+      "message": "जब आप बहुत सारे टैब खोलते हैं, तो बस एक्सटेंशन बटन पर क्लिक करें - और आपके सभी टैब सुंदर सूचियों में समूहीकृत हो जाएंगे"
+   },
+   "name": {
+      "message": "टैब समूहीकरण"
+   },
+   "nodata": {
+      "message": "कोई डेटा नहीं"
+   },
+   "options_excludeHosts": {
+      "message": "डोमेन को बाहर करें"
+   },
+   "options_feedback": {
+      "message": "फीडबैक"
+   },
+   "options_groupHost": {
+      "message": "डोमेन के अनुसार समूह बनाएं"
+   },
+   "options_groupHostDesc": {
+      "message": "किसी विशेष डोमेन पर खुले सभी टैब को समूहीकृत करेगा"
+   },
+   "options_groupRare": {
+      "message": "कम उपयोग किए गए टैब को समूहीकृत करें"
+   },
+   "options_groupRareDesc": {
+      "message": "3 घंटे के भीतर उपयोग न किए गए टैब को समूहीकृत करेगा"
+   },
+   "options_groupSerp": {
+      "message": "खोज परिणाम समूहीकृत करें (Google, Yandex)"
+   },
+   "options_groupSerpDesc": {
+      "message": "खोज इंजन परिणाम पेज से खुले सभी टैब को समूहीकृत करेगा"
+   },
+   "options_restoreGroups": {
+      "message": "सभी सहेजे गए समूहों को पुनर्स्थापित करें"
+   },
+   "options_save": {
+      "message": "सहेजें"
+   },
+   "options_saved": {
+      "message": "सहेजा गया"
+   },
+   "options_showContextMenuItem": {
+      "message": "संदर्भ मेनू में आइटम दिखाएं"
+   },
+   "options_showContextMenuItemDesc": {
+      "message": "आप संदर्भ मेनू के माध्यम से टैब को तेजी से समूहीकृत कर सकते हैं"
+   },
+   "options_removeDuplicateTabs": {
+      "message": "डुप्लिकेट टैब हटाएं"
+   },
+   "options_removeDuplicateTabsDesc": {
+      "message": "समूहीकरण के बाद समान URL वाले टैब को हटा देगा"
+   },
+   "options_title": {
+      "message": "सेटिंग्स"
+   },
+   "options_version": {
+      "message": "संस्करण"
+   },
+   "rarelyUsed": {
+      "message": "कम उपयोग किया गया"
+   },
+   "restore": {
+      "message": "सभी लिंक <b>वर्तमान</b> विंडो में खोलें"
+   },
+   "restoreNewWin": {
+      "message": "सभी लिंक <b>नई</b> विंडो में खोलें"
+   },
+   "shortName": {
+      "message": "टैब समूह"
+   }
+}

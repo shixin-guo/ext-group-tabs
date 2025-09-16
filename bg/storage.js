@@ -13,7 +13,8 @@
     groupHost: true,
     groupSerp: true,
     groupRare: true,
-    showContextMenuItem: true
+    showContextMenuItem: true,
+    removeDuplicateTabs: false
   };
 
   exports.storage = {

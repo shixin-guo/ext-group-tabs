@@ -53,6 +53,12 @@
    "options_showContextMenuItemDesc": {
       "message": "через контекстное меню можно быстро группировать вкладки"
    },
+   "options_removeDuplicateTabs": {
+      "message": "удалять дубликаты вкладок"
+   },
+   "options_removeDuplicateTabsDesc": {
+      "message": "будет удалять вкладки с одинаковыми URL после группировки"
+   },
    "options_title": {
       "message": "Настройка"
    },

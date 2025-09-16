@@ -19,7 +19,7 @@ This is a fork and open-source version of the original "Group Your Tabs" extensi
 ## Installation
 
 ### From Chrome Web Store
-Visit the [Chrome Web Store page](https://chrome.google.com/webstore/detail/group-your-tabs/chaoejepfhlcelgpicelfccoiojpiofn) and click "Add to Chrome".
+Visit the [Chrome Web Store page](https://chrome.google.com/webstore/detail/group-your-tabs/pdfljehjkbbacjbgnocamgcllobmfocc) and click "Add to Chrome".
 
 ### From Source
 1. Clone this repository

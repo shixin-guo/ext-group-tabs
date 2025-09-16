@@ -1,0 +1,80 @@
+{
+   "close": {
+      "message": "إغلاق"
+   },
+   "contextMenu_makeGroups": {
+      "message": "تجميع!"
+   },
+   "description": {
+      "message": "عندما تفتح الكثير من التبويبات، فقط اضغط على زر الإضافة - وستتم تجميع جميع تبويباتك في قوائم جميلة"
+   },
+   "name": {
+      "message": "تجميع التبويبات"
+   },
+   "nodata": {
+      "message": "لا توجد بيانات"
+   },
+   "options_excludeHosts": {
+      "message": "استبعاد النطاقات"
+   },
+   "options_feedback": {
+      "message": "التعليقات"
+   },
+   "options_groupHost": {
+      "message": "تجميع حسب النطاق"
+   },
+   "options_groupHostDesc": {
+      "message": "سيقوم بتجميع جميع التبويبات المفتوحة في نطاق معين"
+   },
+   "options_groupRare": {
+      "message": "تجميع التبويبات قليلة الاستخدام"
+   },
+   "options_groupRareDesc": {
+      "message": "سيقوم بتجميع التبويبات التي لم تستخدمها خلال 3 ساعات"
+   },
+   "options_groupSerp": {
+      "message": "تجميع نتائج البحث (Google، Yandex)"
+   },
+   "options_groupSerpDesc": {
+      "message": "سيقوم بتجميع جميع التبويبات المفتوحة من صفحة نتائج محرك البحث"
+   },
+   "options_restoreGroups": {
+      "message": "استعادة جميع المجموعات المحفوظة"
+   },
+   "options_save": {
+      "message": "حفظ"
+   },
+   "options_saved": {
+      "message": "تم الحفظ"
+   },
+   "options_showContextMenuItem": {
+      "message": "إظهار العنصر في القائمة السياقية"
+   },
+   "options_showContextMenuItemDesc": {
+      "message": "يمكنك تجميع التبويبات بسرعة من خلال القائمة السياقية"
+   },
+   "options_removeDuplicateTabs": {
+      "message": "إزالة التبويبات المكررة"
+   },
+   "options_removeDuplicateTabsDesc": {
+      "message": "سيقوم بإزالة التبويبات التي لها نفس الرابط بعد التجميع"
+   },
+   "options_title": {
+      "message": "الإعدادات"
+   },
+   "options_version": {
+      "message": "الإصدار"
+   },
+   "rarelyUsed": {
+      "message": "قليل الاستخدام"
+   },
+   "restore": {
+      "message": "فتح جميع الروابط في النافذة <b>الحالية</b>"
+   },
+   "restoreNewWin": {
+      "message": "فتح جميع الروابط في نافذة <b>جديدة</b>"
+   },
+   "shortName": {
+      "message": "تجميع التبويبات"
+   }
+}

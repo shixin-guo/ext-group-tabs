@@ -1,0 +1,80 @@
+{
+   "close": {
+      "message": "关闭"
+   },
+   "contextMenu_makeGroups": {
+      "message": "分组！"
+   },
+   "description": {
+      "message": "当您打开太多标签页时，只需点击扩展按钮 - 所有标签页将被分组为美观的列表"
+   },
+   "name": {
+      "message": "标签页分组"
+   },
+   "nodata": {
+      "message": "无数据"
+   },
+   "options_excludeHosts": {
+      "message": "排除域名"
+   },
+   "options_feedback": {
+      "message": "反馈"
+   },
+   "options_groupHost": {
+      "message": "按域名分组"
+   },
+   "options_groupHostDesc": {
+      "message": "将分组特定域名的所有标签页"
+   },
+   "options_groupRare": {
+      "message": "分组很少使用的标签页"
+   },
+   "options_groupRareDesc": {
+      "message": "将分组3小时内未使用的标签页"
+   },
+   "options_groupSerp": {
+      "message": "分组搜索结果（Google、百度）"
+   },
+   "options_groupSerpDesc": {
+      "message": "将分组从搜索引擎结果页面打开的所有标签页"
+   },
+   "options_restoreGroups": {
+      "message": "恢复所有保存的分组"
+   },
+   "options_save": {
+      "message": "保存"
+   },
+   "options_saved": {
+      "message": "已保存"
+   },
+   "options_showContextMenuItem": {
+      "message": "在右键菜单中显示项目"
+   },
+   "options_showContextMenuItemDesc": {
+      "message": "您可以通过右键菜单快速分组标签页"
+   },
+   "options_removeDuplicateTabs": {
+      "message": "删除重复标签页"
+   },
+   "options_removeDuplicateTabsDesc": {
+      "message": "分组后将删除具有相同URL的标签页"
+   },
+   "options_title": {
+      "message": "设置"
+   },
+   "options_version": {
+      "message": "版本"
+   },
+   "rarelyUsed": {
+      "message": "很少使用"
+   },
+   "restore": {
+      "message": "在<b>当前</b>窗口中打开所有链接"
+   },
+   "restoreNewWin": {
+      "message": "在<b>新</b>窗口中打开所有链接"
+   },
+   "shortName": {
+      "message": "标签分组"
+   }
+}

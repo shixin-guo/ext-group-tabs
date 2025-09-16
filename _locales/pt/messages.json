@@ -1,0 +1,80 @@
+{
+   "close": {
+      "message": "Fechar"
+   },
+   "contextMenu_makeGroups": {
+      "message": "Agrupar!"
+   },
+   "description": {
+      "message": "Quando você abrir muitas abas, basta clicar no botão da extensão - e todas as suas abas serão agrupadas em listas bonitas"
+   },
+   "name": {
+      "message": "Agrupar Suas Abas"
+   },
+   "nodata": {
+      "message": "Sem dados"
+   },
+   "options_excludeHosts": {
+      "message": "excluir domínios"
+   },
+   "options_feedback": {
+      "message": "Feedback"
+   },
+   "options_groupHost": {
+      "message": "agrupar por domínio"
+   },
+   "options_groupHostDesc": {
+      "message": "agrupará todas as abas abertas em um domínio específico"
+   },
+   "options_groupRare": {
+      "message": "agrupar abas pouco usadas"
+   },
+   "options_groupRareDesc": {
+      "message": "agrupará as abas que você não usou em 3 horas"
+   },
+   "options_groupSerp": {
+      "message": "agrupar resultados de pesquisa (Google, Yandex)"
+   },
+   "options_groupSerpDesc": {
+      "message": "agrupará todas as abas abertas a partir da página de resultados do mecanismo de pesquisa"
+   },
+   "options_restoreGroups": {
+      "message": "Restaurar todos os grupos salvos"
+   },
+   "options_save": {
+      "message": "Salvar"
+   },
+   "options_saved": {
+      "message": "Salvo"
+   },
+   "options_showContextMenuItem": {
+      "message": "mostrar item no menu de contexto"
+   },
+   "options_showContextMenuItemDesc": {
+      "message": "você pode agrupar abas rapidamente através do menu de contexto"
+   },
+   "options_removeDuplicateTabs": {
+      "message": "remover abas duplicadas"
+   },
+   "options_removeDuplicateTabsDesc": {
+      "message": "removerá abas com a mesma URL após o agrupamento"
+   },
+   "options_title": {
+      "message": "Configurações"
+   },
+   "options_version": {
+      "message": "Versão"
+   },
+   "rarelyUsed": {
+      "message": "Pouco usado"
+   },
+   "restore": {
+      "message": "Abrir todos os links na janela <b>atual</b>"
+   },
+   "restoreNewWin": {
+      "message": "Abrir todos os links em uma janela <b>nova</b>"
+   },
+   "shortName": {
+      "message": "Agrupar Abas"
+   }
+}

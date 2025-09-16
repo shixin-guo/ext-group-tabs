@@ -67,7 +67,7 @@ const utils = {
     }
 };
 
-const prodIDs = ['chaoejepfhlcelgpicelfccoiojpiofn', 'hpnnhabkliinlljmhjalfmccfcdokena'];
+const prodIDs = ['pdfljehjkbbacjbgnocamgcllobmfocc', 'hpnnhabkliinlljmhjalfmccfcdokena'];
 const DEBUG = prodIDs.indexOf(chrome.runtime.id) === -1;
 const log = function() {
     if (DEBUG) {
@@ -114,7 +114,8 @@ const defaults = {
     groupHost: true,
     groupSerp: true,
     groupRare: true,
-    showContextMenuItem: true
+    showContextMenuItem: true,
+    removeDuplicateTabs: false
 };
 // END: storage.js
 
@@ -413,7 +414,7 @@ function makeGroups() {
             if (Object.keys(newRarelyTabs).length >= openedTabs.length) {
                 newRarelyTabs = {};
             }
-            const newGroups = getNewGroups(openedTabs, hostTabs, newSerpTabs, newRarelyTabs);
+            const newGroups = getNewGroups(openedTabs, hostTabs, newSerpTabs, newRarelyTabs, settings);
             mergeSavedAndNewGroups(savedGroups, newGroups, visibleGroups);
             saveGroups(newGroups, savedGroups, function() {
                 const createdGroups = doUpdate(newGroups, visibleGroups);
@@ -424,9 +425,10 @@ function makeGroups() {
     });
 }
 
-function getNewGroups(openedTabs, hostTabs, serpTabs, rarelyTabs) {
+function getNewGroups(openedTabs, hostTabs, serpTabs, rarelyTabs, settings) {
     const groups = {};
     let key;
+    const removeDuplicates = settings.removeDuplicateTabs;
 
     openedTabs.forEach(function(tab) {
         let hostStatus = 'passed';
@@ -450,10 +452,19 @@ function getNewGroups(openedTabs, hostTabs, serpTabs, rarelyTabs) {
 
         const added = hostStatus === 'added' || serpStatus === 'added' || rarelyStatus === 'added';
         const passed = hostStatus === 'passed' && serpStatus === 'passed' && rarelyStatus === 'passed';
+        const duplicate = hostStatus === 'dublicate' || serpStatus === 'dublicate' || rarelyStatus === 'dublicate';
 
         if (added || passed) {
             return;
+        } else if (duplicate) {
+            // Handle duplicate tabs based on setting
+            if (removeDuplicates) {
+                // Remove duplicate tab if setting is enabled
+                chrome.tabs.remove(tab.id);
+            }
+            // If setting is disabled, keep the duplicate tab (don't remove it)
         } else {
+            // Remove tab if it's not added, passed, or duplicate
             chrome.tabs.remove(tab.id);
         }
     });
@@ -599,6 +610,7 @@ function createGroupedTab(key, tabId) {
         chrome.tabs.create({url: url});
     }
 }
+
 
 function updateAllGroupedTabs(groups) {
     const sendGroups = {};

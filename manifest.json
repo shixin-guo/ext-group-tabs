@@ -11,7 +11,7 @@
    },
    "default_locale": "en",
    "description": "__MSG_description__",
-   "homepage_url": "https://chrome.google.com/webstore/detail/group-your-tabs/chaoejepfhlcelgpicelfccoiojpiofn",
+   "homepage_url": "https://chrome.google.com/webstore/detail/group-your-tabs/pdfljehjkbbacjbgnocamgcllobmfocc",
    "icons": {
       "128": "img/kpager-128.png",
       "16": "img/kpager-16.png",
@@ -22,5 +22,5 @@
    "options_page": "options/options.html",
    "permissions": [ "tabs", "storage", "contextMenus" ],
    "short_name": "__MSG_shortName__",
-   "version": "2.0"
+   "version": "3.0"
 }

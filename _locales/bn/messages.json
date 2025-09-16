@@ -1,0 +1,80 @@
+{
+   "close": {
+      "message": "বন্ধ করুন"
+   },
+   "contextMenu_makeGroups": {
+      "message": "গ্রুপ করুন!"
+   },
+   "description": {
+      "message": "যখন আপনি অনেক ট্যাব খুলবেন, শুধু এক্সটেনশন বাটনে ক্লিক করুন - এবং আপনার সব ট্যাব সুন্দর তালিকায় গ্রুপ করা হবে"
+   },
+   "name": {
+      "message": "ট্যাব গ্রুপিং"
+   },
+   "nodata": {
+      "message": "কোন ডেটা নেই"
+   },
+   "options_excludeHosts": {
+      "message": "ডোমেইন বাদ দিন"
+   },
+   "options_feedback": {
+      "message": "ফিডব্যাক"
+   },
+   "options_groupHost": {
+      "message": "ডোমেইন অনুযায়ী গ্রুপ করুন"
+   },
+   "options_groupHostDesc": {
+      "message": "একটি নির্দিষ্ট ডোমেইনে খোলা সব ট্যাব গ্রুপ করবে"
+   },
+   "options_groupRare": {
+      "message": "কম ব্যবহৃত ট্যাব গ্রুপ করুন"
+   },
+   "options_groupRareDesc": {
+      "message": "৩ ঘন্টার মধ্যে যে ট্যাব ব্যবহার করেননি সেগুলো গ্রুপ করবে"
+   },
+   "options_groupSerp": {
+      "message": "অনুসন্ধান ফলাফল গ্রুপ করুন (Google, Yandex)"
+   },
+   "options_groupSerpDesc": {
+      "message": "অনুসন্ধান ইঞ্জিন ফলাফল পেজ থেকে খোলা সব ট্যাব গ্রুপ করবে"
+   },
+   "options_restoreGroups": {
+      "message": "সব সংরক্ষিত গ্রুপ পুনরুদ্ধার করুন"
+   },
+   "options_save": {
+      "message": "সংরক্ষণ করুন"
+   },
+   "options_saved": {
+      "message": "সংরক্ষিত"
+   },
+   "options_showContextMenuItem": {
+      "message": "কনটেক্সট মেনুতে আইটেম দেখান"
+   },
+   "options_showContextMenuItemDesc": {
+      "message": "কনটেক্সট মেনুর মাধ্যমে দ্রুত ট্যাব গ্রুপ করতে পারবেন"
+   },
+   "options_removeDuplicateTabs": {
+      "message": "ডুপ্লিকেট ট্যাব সরান"
+   },
+   "options_removeDuplicateTabsDesc": {
+      "message": "গ্রুপ করার পর একই URL-এর ট্যাব সরিয়ে দেবে"
+   },
+   "options_title": {
+      "message": "সেটিংস"
+   },
+   "options_version": {
+      "message": "সংস্করণ"
+   },
+   "rarelyUsed": {
+      "message": "কম ব্যবহৃত"
+   },
+   "restore": {
+      "message": "সব লিংক <b>বর্তমান</b> উইন্ডোতে খুলুন"
+   },
+   "restoreNewWin": {
+      "message": "সব লিংক <b>নতুন</b> উইন্ডোতে খুলুন"
+   },
+   "shortName": {
+      "message": "ট্যাব গ্রুপ"
+   }
+}
