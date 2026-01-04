@@ -61,11 +61,15 @@
       // click link
       if (e.target.tagName === 'A') {
         e.preventDefault();
+        var a = e.target;
         openUrl(
-          e.target.getAttribute('href'),
+          a.getAttribute('href'),
           ul.querySelectorAll('a').length === 1,
           e.button !== 1
         );
+        // Auto-remove clicked link from group
+        sendMessage('remove-url', {url: a.getAttribute('href')});
+        a.classList.add('removed-item');
       }
 
       // click close
