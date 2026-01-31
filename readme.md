@@ -9,6 +9,7 @@ This is a fork and open-source version of the original "Group Your Tabs" extensi
 ## Features
 
 - **One-click Tab Grouping**: Click the extension button to instantly organize all your open tabs
+- **Keyboard Shortcut**: Use `Command+Shift+G` (Mac) or `Ctrl+Shift+G` (Windows/Linux) to quickly group tabs
 - **Domain-based Grouping**: Group tabs by domain/website
 - **Rarely Used Tab Detection**: Automatically group tabs you haven't used in 3+ hours
 - **Search Results Grouping**: Group tabs opened from search engines (Google, Yandex)
@@ -30,13 +31,17 @@ Visit the [Chrome Web Store page](https://chrome.google.com/webstore/detail/grou
 ## Usage
 
 1. **Quick Grouping**: Click the extension icon in the toolbar to group all open tabs
-2. **Context Menu**: Right-click on any webpage and select "Group!" from the context menu
-3. **Settings**: Right-click the extension icon and select "Options" to configure:
+2. **Keyboard Shortcut**: Press `Command+Shift+G` (Mac) or `Ctrl+Shift+G` (Windows/Linux) to group tabs
+3. **Context Menu**: Right-click on any webpage and select "Group!" from the context menu
+4. **Settings**: Right-click the extension icon and select "Options" to configure:
    - Group tabs per domain
    - Group rarely used tabs
    - Group search results
    - Show/hide context menu item
-4. **Restore Groups**: Click "Open all links" to restore grouped tabs
+   - Remove duplicate tabs
+   - Close blank tabs
+5. **Restore Groups**: Click "Open all links" to restore grouped tabs
+6. **Customize Shortcut**: Go to `chrome://extensions/shortcuts` to customize the keyboard shortcut
 
 ## Development
 
@@ -60,7 +65,7 @@ ext-group-tabs/
 Build zip file with timestamp to dist folder:
 
 ```bash
-mkdir -p dist && zip -r "dist/group-tabs-extension-v2.0-$(date +%Y%m%d-%H%M%S).zip" . -x "*.git*" "*.DS_Store*" "*.vscode*" "node_modules/*" "*.log" "dist/*"
+mkdir -p dist && zip -r "dist/group-tabs-extension-v3.2-$(date +%Y%m%d-%H%M%S).zip" . -x "*.git*" "*.DS_Store*" "*.vscode*" "node_modules/*" "*.log" "dist/*"
 ```
 
 ## Permissions

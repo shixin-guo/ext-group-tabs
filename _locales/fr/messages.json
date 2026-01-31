@@ -2,6 +2,9 @@
    "close": {
       "message": "Fermer"
    },
+   "command_makeGroups": {
+      "message": "Grouper les onglets"
+   },
    "contextMenu_makeGroups": {
       "message": "Grouper !"
    },
@@ -58,6 +61,12 @@
    },
    "options_removeDuplicateTabsDesc": {
       "message": "supprimera les onglets avec la même URL après groupement"
+   },
+   "options_closeBlankTabs": {
+      "message": "fermer les onglets vides"
+   },
+   "options_closeBlankTabsDesc": {
+      "message": "fermera les onglets about:blank ou pages vides similaires lors du groupement"
    },
    "options_title": {
       "message": "Paramètres"

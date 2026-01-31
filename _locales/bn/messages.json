@@ -2,6 +2,9 @@
    "close": {
       "message": "বন্ধ করুন"
    },
+   "command_makeGroups": {
+      "message": "ট্যাব গ্রুপ করুন"
+   },
    "contextMenu_makeGroups": {
       "message": "গ্রুপ করুন!"
    },
@@ -58,6 +61,12 @@
    },
    "options_removeDuplicateTabsDesc": {
       "message": "গ্রুপ করার পর একই URL-এর ট্যাব সরিয়ে দেবে"
+   },
+   "options_closeBlankTabs": {
+      "message": "ফাঁকা ট্যাব বন্ধ করুন"
+   },
+   "options_closeBlankTabsDesc": {
+      "message": "গ্রুপ করার সময় about:blank বা অনুরূপ ফাঁকা পেজ বন্ধ করবে"
    },
    "options_title": {
       "message": "সেটিংস"

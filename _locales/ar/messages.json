@@ -2,6 +2,9 @@
    "close": {
       "message": "إغلاق"
    },
+   "command_makeGroups": {
+      "message": "تجميع علامات التبويب"
+   },
    "contextMenu_makeGroups": {
       "message": "تجميع!"
    },
@@ -58,6 +61,12 @@
    },
    "options_removeDuplicateTabsDesc": {
       "message": "سيقوم بإزالة التبويبات التي لها نفس الرابط بعد التجميع"
+   },
+   "options_closeBlankTabs": {
+      "message": "إغلاق التبويبات الفارغة"
+   },
+   "options_closeBlankTabsDesc": {
+      "message": "سيقوم بإغلاق التبويبات about:blank أو الصفحات الفارغة المشابهة عند التجميع"
    },
    "options_title": {
       "message": "الإعدادات"

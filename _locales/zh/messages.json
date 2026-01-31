@@ -2,6 +2,9 @@
    "close": {
       "message": "关闭"
    },
+   "command_makeGroups": {
+      "message": "分组标签页"
+   },
    "contextMenu_makeGroups": {
       "message": "分组！"
    },
@@ -58,6 +61,12 @@
    },
    "options_removeDuplicateTabsDesc": {
       "message": "分组后将删除具有相同URL的标签页"
+   },
+   "options_closeBlankTabs": {
+      "message": "关闭空白标签页"
+   },
+   "options_closeBlankTabsDesc": {
+      "message": "分组时将关闭 about:blank 或类似的空白页面"
    },
    "options_title": {
       "message": "设置"

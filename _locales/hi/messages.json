@@ -2,6 +2,9 @@
    "close": {
       "message": "बंद करें"
    },
+   "command_makeGroups": {
+      "message": "टैब समूहित करें"
+   },
    "contextMenu_makeGroups": {
       "message": "समूह बनाएं!"
    },
@@ -58,6 +61,12 @@
    },
    "options_removeDuplicateTabsDesc": {
       "message": "समूहीकरण के बाद समान URL वाले टैब को हटा देगा"
+   },
+   "options_closeBlankTabs": {
+      "message": "खाली टैब बंद करें"
+   },
+   "options_closeBlankTabsDesc": {
+      "message": "समूहीकरण के दौरान about:blank या समान खाली पेज बंद कर देगा"
    },
    "options_title": {
       "message": "सेटिंग्स"

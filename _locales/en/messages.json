@@ -2,6 +2,9 @@
    "close": {
       "message": "Close"
    },
+   "command_makeGroups": {
+      "message": "Group tabs"
+   },
    "contextMenu_makeGroups": {
       "message": "Group!"
    },
@@ -58,6 +61,12 @@
    },
    "options_removeDuplicateTabsDesc": {
       "message": "will remove tabs with the same URL after grouping"
+   },
+   "options_closeBlankTabs": {
+      "message": "close blank tabs"
+   },
+   "options_closeBlankTabsDesc": {
+      "message": "will close tabs with about:blank or similar blank pages when grouping"
    },
    "options_title": {
       "message": "Settings"

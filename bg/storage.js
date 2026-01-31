@@ -14,7 +14,8 @@
     groupSerp: true,
     groupRare: true,
     showContextMenuItem: true,
-    removeDuplicateTabs: false
+    removeDuplicateTabs: false,
+    closeBlankTabs: false
   };
 
   exports.storage = {

@@ -2,6 +2,9 @@
    "close": {
       "message": "Cerrar"
    },
+   "command_makeGroups": {
+      "message": "Agrupar pestañas"
+   },
    "contextMenu_makeGroups": {
       "message": "¡Agrupar!"
    },
@@ -58,6 +61,12 @@
    },
    "options_removeDuplicateTabsDesc": {
       "message": "eliminará las pestañas con la misma URL después de agrupar"
+   },
+   "options_closeBlankTabs": {
+      "message": "cerrar pestañas en blanco"
+   },
+   "options_closeBlankTabsDesc": {
+      "message": "cerrará las pestañas about:blank o páginas en blanco similares al agrupar"
    },
    "options_title": {
       "message": "Configuración"

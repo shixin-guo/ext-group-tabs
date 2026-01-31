@@ -115,7 +115,8 @@ const defaults = {
     groupSerp: true,
     groupRare: true,
     showContextMenuItem: true,
-    removeDuplicateTabs: false
+    removeDuplicateTabs: false,
+    closeBlankTabs: false
 };
 // END: storage.js
 
@@ -407,6 +408,12 @@ function makeGroups() {
     getOpenedTabs(function(openedTabs) {
         const visibleGroups = getVisibleGroups(openedTabs);
         storage.load(function(savedGroups, settings) {
+            log('closeBlankTabs setting:', settings.closeBlankTabs);
+            // Close blank tabs if option is enabled
+            if (settings.closeBlankTabs) {
+                closeBlankTabsInList(openedTabs);
+            }
+            
             openedTabs = removeExcludes(openedTabs, settings.excludeHosts);
             const hostTabs = settings.groupHost ? getHostTabs(openedTabs) : {};
             const newSerpTabs = settings.groupSerp ? serpTabs : {};
@@ -423,6 +430,23 @@ function makeGroups() {
             });
         });
     });
+}
+
+function closeBlankTabsInList(openedTabs) {
+    const blankTabIds = [];
+    for (let i = openedTabs.length - 1; i >= 0; i--) {
+        const tab = openedTabs[i];
+        if (tab.url === 'about:blank' || tab.url.startsWith('about:') || tab.url.startsWith('chrome://newtab/')) {
+            blankTabIds.push(tab.id);
+            openedTabs.splice(i, 1);
+        }
+    }
+    if (blankTabIds.length > 0) {
+        log('Total blank tabs to close:', blankTabIds.length);
+        chrome.tabs.remove(blankTabIds);
+    } else {
+        log('No blank tabs found to close');
+    }
 }
 
 function getNewGroups(openedTabs, hostTabs, serpTabs, rarelyTabs, settings) {
@@ -746,6 +770,14 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
 
 contextMenu.init();
 // END: context-menu.js
+
+// START: commands.js
+chrome.commands.onCommand.addListener((command) => {
+    if (command === 'make-groups') {
+        makeGroups();
+    }
+});
+// END: commands.js
 
 // START: debug.js
 const debug = {

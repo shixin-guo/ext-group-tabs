@@ -2,6 +2,9 @@
    "close": {
       "message": "Fechar"
    },
+   "command_makeGroups": {
+      "message": "Agrupar abas"
+   },
    "contextMenu_makeGroups": {
       "message": "Agrupar!"
    },
@@ -58,6 +61,12 @@
    },
    "options_removeDuplicateTabsDesc": {
       "message": "removerá abas com a mesma URL após o agrupamento"
+   },
+   "options_closeBlankTabs": {
+      "message": "fechar abas em branco"
+   },
+   "options_closeBlankTabsDesc": {
+      "message": "fechará abas about:blank ou páginas em branco similares ao agrupar"
    },
    "options_title": {
       "message": "Configurações"
