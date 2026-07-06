@@ -110,6 +110,7 @@ const storage = {
 
 const defaults = {
     hosts: {},
+    closeHosts: ['google.com'],
     excludeHosts: ['facebook.com', 'gmail.com', 'vk.com'],
     groupHost: true,
     groupSerp: true,
@@ -413,6 +414,8 @@ function makeGroups() {
             if (settings.closeBlankTabs) {
                 closeBlankTabsInList(openedTabs);
             }
+
+            openedTabs = closeHostsInList(openedTabs, settings.closeHosts);
             
             openedTabs = removeExcludes(openedTabs, settings.excludeHosts);
             const hostTabs = settings.groupHost ? getHostTabs(openedTabs) : {};
@@ -447,6 +450,23 @@ function closeBlankTabsInList(openedTabs) {
     } else {
         log('No blank tabs found to close');
     }
+}
+
+function closeHostsInList(openedTabs, closeHosts) {
+    const hostList = Array.isArray(closeHosts) ? closeHosts : [];
+    const closeTabIds = [];
+    for (let i = openedTabs.length - 1; i >= 0; i--) {
+        const tab = openedTabs[i];
+        if (hostList.indexOf(tab.host) !== -1) {
+            closeTabIds.push(tab.id);
+            openedTabs.splice(i, 1);
+        }
+    }
+    if (closeTabIds.length > 0) {
+        log('Total domain-matched tabs to close:', closeTabIds.length);
+        chrome.tabs.remove(closeTabIds);
+    }
+    return openedTabs;
 }
 
 function getNewGroups(openedTabs, hostTabs, serpTabs, rarelyTabs, settings) {

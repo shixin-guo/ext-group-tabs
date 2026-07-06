@@ -9,6 +9,7 @@
 
   var defaults = {
     hosts: {},
+    closeHosts: ['google.com'],
     excludeHosts: ['facebook.com', 'gmail.com', 'vk.com'],
     groupHost: true,
     groupSerp: true,

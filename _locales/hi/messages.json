@@ -68,6 +68,9 @@
    "options_closeBlankTabsDesc": {
       "message": "समूहीकरण के दौरान about:blank या समान खाली पेज बंद कर देगा"
    },
+   "options_closeHosts": {
+      "message": "डोमेन बंद करें"
+   },
    "options_title": {
       "message": "सेटिंग्स"
    },

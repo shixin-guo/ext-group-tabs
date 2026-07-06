@@ -68,6 +68,9 @@
    "options_closeBlankTabsDesc": {
       "message": "গ্রুপ করার সময় about:blank বা অনুরূপ ফাঁকা পেজ বন্ধ করবে"
    },
+   "options_closeHosts": {
+      "message": "ডোমেইন বন্ধ করুন"
+   },
    "options_title": {
       "message": "সেটিংস"
    },

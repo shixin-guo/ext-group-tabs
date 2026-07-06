@@ -68,6 +68,9 @@
    "options_closeBlankTabsDesc": {
       "message": "будет закрывать вкладки about:blank и подобные пустые страницы при группировке"
    },
+   "options_closeHosts": {
+      "message": "закрывать домены"
+   },
    "options_title": {
       "message": "Настройка"
    },

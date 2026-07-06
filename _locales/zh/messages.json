@@ -68,6 +68,9 @@
    "options_closeBlankTabsDesc": {
       "message": "分组时将关闭 about:blank 或类似的空白页面"
    },
+   "options_closeHosts": {
+      "message": "关闭域名"
+   },
    "options_title": {
       "message": "设置"
    },

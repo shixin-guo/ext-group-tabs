@@ -68,6 +68,9 @@
    "options_closeBlankTabsDesc": {
       "message": "fermera les onglets about:blank ou pages vides similaires lors du groupement"
    },
+   "options_closeHosts": {
+      "message": "fermer les domaines"
+   },
    "options_title": {
       "message": "Paramètres"
    },

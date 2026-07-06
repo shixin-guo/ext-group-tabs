@@ -68,6 +68,9 @@
    "options_closeBlankTabsDesc": {
       "message": "سيقوم بإغلاق التبويبات about:blank أو الصفحات الفارغة المشابهة عند التجميع"
    },
+   "options_closeHosts": {
+      "message": "إغلاق النطاقات"
+   },
    "options_title": {
       "message": "الإعدادات"
    },

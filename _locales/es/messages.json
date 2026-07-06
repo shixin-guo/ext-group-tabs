@@ -68,6 +68,9 @@
    "options_closeBlankTabsDesc": {
       "message": "cerrará las pestañas about:blank o páginas en blanco similares al agrupar"
    },
+   "options_closeHosts": {
+      "message": "cerrar dominios"
+   },
    "options_title": {
       "message": "Configuración"
    },

@@ -8,6 +8,13 @@
     return Array.isArray(hosts) ? hosts.join('\n') : '';
   }
 
+  function textareaValueToHosts(selector) {
+    var value = document.querySelector(selector).value.trim();
+    return value ? value.split('\n').map(function(host) {
+      return host.trim();
+    }).filter(Boolean) : [];
+  }
+
   function saveOptions() {
     clearTimeout(timeout);
     timeout = setTimeout(function() {
@@ -18,7 +25,8 @@
         showContextMenuItem: document.querySelector('#showContextMenuItem').checked,
         removeDuplicateTabs: document.querySelector('#removeDuplicateTabs').checked,
         closeBlankTabs: document.querySelector('#closeBlankTabs').checked,
-        excludeHosts: document.querySelector('#excludeHosts').value.trim().split('\n')
+        closeHosts: textareaValueToHosts('#closeHosts'),
+        excludeHosts: textareaValueToHosts('#excludeHosts')
       };
       storage.save(options);
 
@@ -59,10 +67,12 @@
       document.querySelector('#showContextMenuItem').checked = options.showContextMenuItem;
       document.querySelector('#removeDuplicateTabs').checked = options.removeDuplicateTabs;
       document.querySelector('#closeBlankTabs').checked = options.closeBlankTabs;
+      document.querySelector('#closeHosts').textContent = hosts2Str(options.closeHosts);
       document.querySelector('#excludeHosts').textContent = hosts2Str(options.excludeHosts);
 
       // events
       document.body.addEventListener('change', saveOptions);
+      document.querySelector('#closeHosts').addEventListener('keyup', saveOptions);
       document.querySelector('#excludeHosts').addEventListener('keyup', saveOptions);
       document.querySelector('#restoreGroups').addEventListener('click', restoreGroups);
     });

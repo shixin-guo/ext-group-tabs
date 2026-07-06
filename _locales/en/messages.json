@@ -68,6 +68,9 @@
    "options_closeBlankTabsDesc": {
       "message": "will close tabs with about:blank or similar blank pages when grouping"
    },
+   "options_closeHosts": {
+      "message": "close domains"
+   },
    "options_title": {
       "message": "Settings"
    },
