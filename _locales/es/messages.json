@@ -3,16 +3,16 @@
       "message": "Cerrar"
    },
    "command_makeGroups": {
-      "message": "Agrupar pestañas"
+      "message": "Agrupar mis pestañas"
    },
    "contextMenu_makeGroups": {
-      "message": "¡Agrupar!"
+      "message": "Agrupar mis pestañas"
    },
    "description": {
-      "message": "Cuando abras demasiadas pestañas, simplemente haz clic en el botón de la extensión - y todas tus pestañas se agruparán en listas bonitas"
+      "message": "Guarda pestañas abiertas en listas ordenadas por sitio, búsqueda o inactividad. Ábrelas de nuevo cuando las necesites."
    },
    "name": {
-      "message": "Agrupar Pestañas"
+      "message": "Group My Tabs"
    },
    "nodata": {
       "message": "Sin datos"
@@ -87,6 +87,6 @@
       "message": "Abrir todos los enlaces en una ventana <b>nueva</b>"
    },
    "shortName": {
-      "message": "Agrupar Pestañas"
+      "message": "Group My Tabs"
    }
 }

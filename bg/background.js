@@ -67,7 +67,7 @@ const utils = {
     }
 };
 
-const prodIDs = ['pdfljehjkbbacjbgnocamgcllobmfocc', 'hpnnhabkliinlljmhjalfmccfcdokena'];
+const prodIDs = ['pdfljehjkbbacjbgnocamgcllobmfocc'];
 const DEBUG = prodIDs.indexOf(chrome.runtime.id) === -1;
 const log = function() {
     if (DEBUG) {
@@ -731,29 +731,6 @@ function restoreGroups() {
 
 // START: button.js
 chrome.action.onClicked.addListener(makeGroups);
-
-const RED_TABS_COUNT = 20;
-let buttonTimeout;
-
-function updateIcon() {
-    clearTimeout(buttonTimeout);
-    buttonTimeout = setTimeout(function() {
-        chrome.tabs.query({windowId: chrome.windows.WINDOW_ID_CURRENT}, function(tabs) {
-            const img19 = tabs.length >= RED_TABS_COUNT ? 'img/kpager-19-red.png' : 'img/kpager-19.png';
-            const img38 = tabs.length >= RED_TABS_COUNT ? 'img/kpager-38-red.png' : 'img/kpager-38.png';
-            
-            // 在Manifest V3中，使用chrome.runtime.getURL获取正确的资源路径
-            chrome.action.setIcon({path: {
-                '19': chrome.runtime.getURL(img19),
-                '38': chrome.runtime.getURL(img38)
-            }});
-        });
-    }, 300);
-}
-
-chrome.tabs.onCreated.addListener(updateIcon);
-chrome.tabs.onRemoved.addListener(updateIcon);
-updateIcon();
 // END: button.js
 
 // START: context-menu.js

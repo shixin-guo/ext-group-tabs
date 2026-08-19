@@ -3,16 +3,16 @@
       "message": "关闭"
    },
    "command_makeGroups": {
-      "message": "分组标签页"
+      "message": "分组我的标签"
    },
    "contextMenu_makeGroups": {
-      "message": "分组！"
+      "message": "分组我的标签"
    },
    "description": {
-      "message": "当您打开太多标签页时，只需点击扩展按钮 - 所有标签页将被分组为美观的列表"
+      "message": "把过多的标签页按网站、搜索来源或闲置时间收成清单，需要时再打开。"
    },
    "name": {
-      "message": "标签页分组"
+      "message": "分组我的标签"
    },
    "nodata": {
       "message": "无数据"
@@ -87,6 +87,6 @@
       "message": "在<b>新</b>窗口中打开所有链接"
    },
    "shortName": {
-      "message": "标签分组"
+      "message": "分组我的标签"
    }
 }

@@ -3,16 +3,16 @@
       "message": "Fechar"
    },
    "command_makeGroups": {
-      "message": "Agrupar abas"
+      "message": "Agrupar minhas abas"
    },
    "contextMenu_makeGroups": {
-      "message": "Agrupar!"
+      "message": "Agrupar minhas abas"
    },
    "description": {
-      "message": "Quando você abrir muitas abas, basta clicar no botão da extensão - e todas as suas abas serão agrupadas em listas bonitas"
+      "message": "Organize abas abertas em listas por site, busca ou inatividade. Reabra quando precisar."
    },
    "name": {
-      "message": "Agrupar Suas Abas"
+      "message": "Group My Tabs"
    },
    "nodata": {
       "message": "Sem dados"
@@ -87,6 +87,6 @@
       "message": "Abrir todos os links em uma janela <b>nova</b>"
    },
    "shortName": {
-      "message": "Agrupar Abas"
+      "message": "Group My Tabs"
    }
 }

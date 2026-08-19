@@ -1,51 +1,43 @@
-# Group Your Tabs
+# Group My Tabs
 
-A Chrome extension that helps you organize your tabs when you have too many open. Simply click the extension button and all your tabs will be grouped into pretty lists for better management.
-
-## Background
-
-This is a fork and open-source version of the original "Group Your Tabs" extension. The original v2 extension was removed from the Chrome Web Store, so we decided to fork the project and make it open source to keep this useful tool available for everyone.
+A Chrome extension that collects overflowing tabs into lists so you can find and reopen them later.
 
 ## Features
 
-- **One-click Tab Grouping**: Click the extension button to instantly organize all your open tabs
-- **Keyboard Shortcut**: Use `Command+Shift+G` (Mac) or `Ctrl+Shift+G` (Windows/Linux) to quickly group tabs
-- **Domain-based Grouping**: Group tabs by domain/website
-- **Rarely Used Tab Detection**: Automatically group tabs you haven't used in 3+ hours
-- **Search Results Grouping**: Group tabs opened from search engines (Google, Yandex)
-- **Context Menu Integration**: Right-click to quickly group tabs
-- **Restore Groups**: Open all grouped tabs in current or new window
-- **Multi-language Support**: Available in English and Russian
+- **One-click grouping**: Click the toolbar icon to collect open tabs into lists
+- **Keyboard shortcut**: `Command+G` (Mac) or `Ctrl+G` (Windows/Linux)
+- **By site**: Collect tabs from the same domain
+- **Idle tabs**: Collect tabs unused for 3+ hours
+- **Search results**: Collect tabs opened from search engines
+- **Context menu**: Right-click a page and choose **Group my tabs**
+- **Restore**: Reopen a list in the current or a new window
+- **Languages**: English, Chinese, Spanish, French, Arabic, Hindi, Portuguese, Bengali, Russian
 
 ## Installation
 
-### From Chrome Web Store
-Visit the [Chrome Web Store page](https://chrome.google.com/webstore/detail/group-your-tabs/pdfljehjkbbacjbgnocamgcllobmfocc) and click "Add to Chrome".
-
-### From Source
+### From source
 1. Clone this repository
 2. Open Chrome and go to `chrome://extensions/`
-3. Enable "Developer mode"
-4. Click "Load unpacked" and select the extension folder
+3. Enable Developer mode
+4. Click Load unpacked and select this folder
 
 ## Usage
 
-1. **Quick Grouping**: Click the extension icon in the toolbar to group all open tabs
-2. **Keyboard Shortcut**: Press `Command+Shift+G` (Mac) or `Ctrl+Shift+G` (Windows/Linux) to group tabs
-3. **Context Menu**: Right-click on any webpage and select "Group!" from the context menu
-4. **Settings**: Right-click the extension icon and select "Options" to configure:
+1. Click the Group My Tabs icon in the toolbar
+2. Or press the keyboard shortcut
+3. Or use the page context menu
+4. Open **Options** from the extension menu to configure:
    - Group tabs per domain
    - Group rarely used tabs
    - Group search results
    - Show/hide context menu item
    - Remove duplicate tabs
    - Close blank tabs
-5. **Restore Groups**: Click "Open all links" to restore grouped tabs
-6. **Customize Shortcut**: Go to `chrome://extensions/shortcuts` to customize the keyboard shortcut
+5. Use **Open all links** to restore a list
+6. Customize the shortcut at `chrome://extensions/shortcuts`
 
 ## Development
 
-### Project Structure
 ```
 ext-group-tabs/
 ├── bg/                 # Background scripts
@@ -54,34 +46,32 @@ ext-group-tabs/
 ├── _locales/          # Internationalization
 ├── img/               # Icons and images
 ├── libs/              # Third-party libraries
-├── group.html         # Main grouping interface
+├── group.html         # Main list interface
 ├── group.js           # Main grouping logic
 ├── group.css          # Styling
 └── manifest.json      # Extension manifest
 ```
 
-### Build
-
-Build zip file with timestamp to dist folder:
+### Package
 
 ```bash
-mkdir -p dist && zip -r "dist/group-tabs-extension-v3.2-$(date +%Y%m%d-%H%M%S).zip" . -x "*.git*" "*.DS_Store*" "*.vscode*" "node_modules/*" "*.log" "dist/*"
+mkdir -p dist && zip -r "dist/group-my-tabs-v3.4-$(date +%Y%m%d-%H%M%S).zip" . -x "*.git*" "*.DS_Store*" "*.vscode*" "node_modules/*" "*.log" "dist/*"
 ```
 
 ## Permissions
 
-- `tabs`: To access and manage browser tabs
-- `storage`: To save user preferences and grouped tabs
-- `contextMenus`: To add right-click menu options
+- `tabs`: Access and manage browser tabs
+- `storage`: Save preferences and shelved lists
+- `contextMenus`: Add a right-click menu item
 
 ## Author
 
-Vitaliy Potapov
+Shixin Guo
 
 ## Version
 
-2.0
+3.4
 
 ## License
 
-This project is open source. Please check the license file for more details.
+This project is open source. See the license file for details.

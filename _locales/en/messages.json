@@ -3,16 +3,16 @@
       "message": "Close"
    },
    "command_makeGroups": {
-      "message": "Group tabs"
+      "message": "Group my tabs"
    },
    "contextMenu_makeGroups": {
-      "message": "Group!"
+      "message": "Group my tabs"
    },
    "description": {
-      "message": "When you open too many tabs, just click the extension button - and all your tabs will be grouped in a pretty lists"
+      "message": "Collapse crowded tabs into tidy lists by site, search, or idle time. Reopen them later when you need them."
    },
    "name": {
-      "message": "Group Your Tabs"
+      "message": "Group My Tabs"
    },
    "nodata": {
       "message": "No data"
@@ -87,6 +87,6 @@
       "message": "Open all links in \u003Cb>new\u003C/b> window"
    },
    "shortName": {
-      "message": "Group Y Tabs"
+      "message": "Group My Tabs"
    }
 }

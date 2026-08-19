@@ -3,16 +3,16 @@
       "message": "Fermer"
    },
    "command_makeGroups": {
-      "message": "Grouper les onglets"
+      "message": "Grouper mes onglets"
    },
    "contextMenu_makeGroups": {
-      "message": "Grouper !"
+      "message": "Grouper mes onglets"
    },
    "description": {
-      "message": "Quand vous ouvrez trop d'onglets, cliquez simplement sur le bouton de l'extension - et tous vos onglets seront groupés en jolies listes"
+      "message": "Rangez les onglets trop nombreux en listes par site, recherche ou inactivité. Rouvrez-les plus tard."
    },
    "name": {
-      "message": "Grouper Vos Onglets"
+      "message": "Group My Tabs"
    },
    "nodata": {
       "message": "Aucune donnée"
@@ -87,6 +87,6 @@
       "message": "Ouvrir tous les liens dans une <b>nouvelle</b> fenêtre"
    },
    "shortName": {
-      "message": "Grouper Onglets"
+      "message": "Group My Tabs"
    }
 }
